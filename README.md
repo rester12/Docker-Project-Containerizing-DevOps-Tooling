@@ -1,4 +1,4 @@
-# Docker Project 3: Containerizing DevOps Tooling and Container Storage Persistence
+# Docker Project: Containerizing DevOps Tooling and Container Storage Persistence
 
 ## Overview
 
@@ -70,7 +70,7 @@ The project objectives were to:
 ## Repository Contents
 
 ```
-docker-project-3-devops-tooling/
+docker-project-devops-tooling/
 ├── README.md
 └── .gitignore
 ```
