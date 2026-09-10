@@ -1,4 +1,4 @@
-# Docker Project: Containerizing DevOps Tooling and Container Storage Persistence
+﻿# Docker Project: Containerizing DevOps Tooling and Container Storage Persistence
 
 ## Overview
 
@@ -6,7 +6,7 @@ This project stands up a fully containerized DevOps toolchain, Jenkins, Portaine
 
 ## Medium Article
 
-*[link coming soon]*
+[Building a Containerized DevOps Tooling with Jenkins, Portainer, and SonarQube, and Proving Container Storage Persistence](https://medium.com/@rester.mcglown/building-a-containerized-devops-tooling-with-jenkins-portainer-and-sonarqube-and-proving-eaa6137c67ff)
 
 ## Architecture
 
@@ -71,8 +71,8 @@ The project objectives were to:
 
 ```
 docker-project-devops-tooling/
-├── README.md
-└── .gitignore
+â”œâ”€â”€ README.md
+â””â”€â”€ .gitignore
 ```
 
 Screenshots documenting each phase are included in the accompanying Medium article rather than this repository.
@@ -212,3 +212,4 @@ SonarQube: `http://localhost:9000`
 ## Future Improvements
 
 A production version of this setup would introduce Docker Compose (or a full orchestrator) to manage all three services declaratively, add a reverse proxy with TLS in front of each web UI, restrict Portainer's Docker socket access behind a socket proxy rather than a direct mount, and configure Jenkins agents to connect over the already-published JNLP port for distributed builds.
+
