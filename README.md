@@ -6,7 +6,9 @@ This project stands up fully containerized DevOps tooling, Jenkins, Portainer, a
 
 ## Medium Article
 
-*[link coming soon]*
+A detailed Medium walkthrough documenting the complete build process, screenshots, troubleshooting, validation steps, engineering decisions, and lessons learned is available here:
+
+[Building a Containerized DevOps Tooling with Jenkins, Portainer, and SonarQube, and Proving Container Storage Persistence](https://medium.com/@rester.mcglown/building-a-containerized-devops-tooling-with-jenkins-portainer-and-sonarqube-and-proving-eaa6137c67ff)
 
 ## Architecture
 
