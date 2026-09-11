@@ -1,12 +1,12 @@
-﻿# Docker Project: Containerizing DevOps Tooling and Container Storage Persistence
+# Docker Project: Containerizing DevOps Tooling and Container Storage Persistence
 
 ## Overview
 
-This project stands up a fully containerized DevOps toolchain, Jenkins, Portainer, and SonarQube, entirely through the Docker CLI, with no Docker Compose. The core focus is proving, not just configuring, storage persistence: every stateful service is backed by a named Docker volume, and each one is deliberately deleted and recreated mid-project to confirm its data survives independently of the container's lifecycle.
+This project stands up fully containerized DevOps tooling, Jenkins, Portainer, and SonarQube, entirely through the Docker CLI, with no Docker Compose. The core focus is proving, not just configuring, storage persistence: every stateful service is backed by a named Docker volume, and each one is deliberately deleted and recreated mid-project to confirm its data survives independently of the container's lifecycle.
 
 ## Medium Article
 
-[Building a Containerized DevOps Tooling with Jenkins, Portainer, and SonarQube, and Proving Container Storage Persistence](https://medium.com/@rester.mcglown/building-a-containerized-devops-tooling-with-jenkins-portainer-and-sonarqube-and-proving-eaa6137c67ff)
+*[link coming soon]*
 
 ## Architecture
 
@@ -71,8 +71,8 @@ The project objectives were to:
 
 ```
 docker-project-devops-tooling/
-â”œâ”€â”€ README.md
-â””â”€â”€ .gitignore
+|-- README.md
+`-- .gitignore
 ```
 
 Screenshots documenting each phase are included in the accompanying Medium article rather than this repository.
@@ -212,4 +212,3 @@ SonarQube: `http://localhost:9000`
 ## Future Improvements
 
 A production version of this setup would introduce Docker Compose (or a full orchestrator) to manage all three services declaratively, add a reverse proxy with TLS in front of each web UI, restrict Portainer's Docker socket access behind a socket proxy rather than a direct mount, and configure Jenkins agents to connect over the already-published JNLP port for distributed builds.
-
